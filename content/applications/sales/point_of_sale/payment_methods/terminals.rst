@@ -34,6 +34,7 @@ the POS <../payment_methods>`.
    :titlesonly:
 
    terminals/adyen
+   terminals/razorpay
    terminals/ingenico
    terminals/six
    terminals/stripe
