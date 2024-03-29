@@ -4,6 +4,12 @@
 Changelog
 =========
 
+Odoo Online version 17.3
+========================
+
+- in read_group, _read_group and in domains, we now support grouping by relative month, quarter and week: `#159528 <https://github.com/odoo/odoo/pull/159528>`_.
+
+
 Odoo Online version 17.2
 ========================
 

@@ -885,6 +885,9 @@ A domain is a list of criteria, each criterion being a triple (either a
     a field name of the current model, or a relationship traversal through
     a :class:`~odoo.fields.Many2one` using dot-notation e.g. ``'street'``
     or ``'partner_id.country'``
+    If the field is a date field, you can also specify a part of the date using ``'field_name.granularity'``.
+    The supported granularities are ``'quarter'``, ``'month'``, ``'week'``.
+    They all use a integeger as value.
 
 * ``operator`` (``str``)
     an operator used to compare the ``field_name`` with the ``value``. Valid
@@ -980,6 +983,10 @@ Domain criteria can be combined using logical operators in *prefix* form:
 
         [('invoice_status', '=', 'to invoice'),
          ('order_line', 'any', [('product_id.qty_available', '<=', 0)])]
+
+
+    To search for all partners that are born in the month February::
+        [('birthday.month','=',2)]
 
 Unlink
 ------
