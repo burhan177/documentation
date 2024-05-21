@@ -9,3 +9,4 @@ sphinxcontrib-htmlhelp==2.0.1
 sphinxcontrib-serializinghtml==1.1.5
 sphinxcontrib-qthelp==1.0.3
 sphinx-tabs==3.2.0
+requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
